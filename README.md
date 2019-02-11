@@ -32,6 +32,6 @@ The developed code is based on Python as it allows to further extend into a QGIS
     7. destination_gid - integer
 5. Populate the edges table (at_intersects) 
 
-* An exemplary SQL code is included under the *SQL* directory
+**Note**: An exemplary SQL code is included under the *SQL* directory*
 
      
