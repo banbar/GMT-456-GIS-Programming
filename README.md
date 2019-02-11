@@ -16,13 +16,22 @@ The developed code is based on Python as it allows to further extend into a QGIS
 * Building a QGIS Plugin
 
 ## Methodology
-1. Import the polygon shapefile into PostGIS.
-2. Create the *centroids* table. 
-     1. geometry_id
-     2. name
-     3. geometry
-3. Populate the centroids table: 
-    `		insert into public.centroids 
-           (select gid, name_2, st_centroid(geom) 
-           from ilceler)`
+1. Import the polygon shapefile into PostGIS
+2. Create the *centroids* table
+     1. gid (geometry_id) - serial
+     2. name - varchar(40)
+     3. geom (geometry) - geometry(point,*SRID*)
+3. Populate the centroids table (st_centroid)
+4. Create the *edges* table
+    1. gid (geometry_id) - serial
+    2. origin - text
+    3. destination - text
+    4. cost (weight) - float
+    5. geom (geometry) - geometry(LineString, *SRID*)
+    6. origin_gid - integer
+    7. destination_gid - integer
+5. Populate the edges table (at_intersects) 
+
+* An exemplary SQL code is included under the *SQL* directory
+
      
