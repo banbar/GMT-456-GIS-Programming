@@ -35,5 +35,7 @@ The developed code is based on Python as it allows to further extend into a QGIS
 **Note**: An exemplary SQL code is included under the *SQL* directory*
 
 - - - -
-The MST of Turkish cities (previously shared on [Twitter](https://twitter.com/B_Anbar/status/1087787095748423687 "Named link title"):
+The MST of Turkish cities (previously shared on [Twitter](https://twitter.com/B_Anbar/status/1087787095748423687)):
+
+![MST of Turkish Cities](https://pbs.twimg.com/media/DxiXP_WX0AEZrHp.jpg)
 
