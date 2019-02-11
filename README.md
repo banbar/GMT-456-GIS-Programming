@@ -15,7 +15,7 @@ The developed code is based on Python as it allows to further extend into a QGIS
       * Prim's Algorithm
 * Building a QGIS Plugin
 
-## Methodology
+## PostGIS - SQL
 1. Import the polygon shapefile into PostGIS
 2. Create the *centroids* table
    1. gid (geometry_id) - serial
@@ -31,8 +31,6 @@ The developed code is based on Python as it allows to further extend into a QGIS
     6. origin_gid - integer
     7. destination_gid - integer
 5. Populate the edges table (at_intersects) 
-
-**Note**: An exemplary SQL code is included under the *SQL* directory*
 
 - - - -
 The MST of Turkish cities is found by using the Kruskal's algorithm which is implemented in Python (previously shared on [Twitter](https://twitter.com/B_Anbar/status/1087787095748423687)):
