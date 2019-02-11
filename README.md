@@ -10,7 +10,7 @@ The developed code is based on Python as it allows to further extend into a QGIS
 * Graph Data Structure
    * Adjacency Matrix
    * Disjoint Sets
-   * Minimum Spanning Tree
+   * Minimum Spanning Tree (MST)
       * Kruskal's Algorithm
       * Prim's Algorithm
 * Building a QGIS Plugin
@@ -34,4 +34,6 @@ The developed code is based on Python as it allows to further extend into a QGIS
 
 **Note**: An exemplary SQL code is included under the *SQL* directory*
 
-     
+- - - -
+The MST of Turkish cities (previously shared on Twitter):
+
