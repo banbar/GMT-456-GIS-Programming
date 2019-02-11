@@ -18,9 +18,9 @@ The developed code is based on Python as it allows to further extend into a QGIS
 ## Methodology
 1. Import the polygon shapefile into PostGIS
 2. Create the *centroids* table
-     1. gid (geometry_id) - serial
-     2. name - varchar(40)
-     3. geom (geometry) - geometry(point,*SRID*)
+   1. gid (geometry_id) - serial
+   2. name - varchar(40)
+   3. geom (geometry) - geometry(point,*SRID*)
 3. Populate the centroids table (st_centroid)
 4. Create the *edges* table
     1. gid (geometry_id) - serial
