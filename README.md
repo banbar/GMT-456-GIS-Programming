@@ -34,9 +34,10 @@ The developed code is based on Python as it allows to further extend into a QGIS
 
 **Note**: An exemplary SQL code is included under the *SQL* directory*
 
-* Having populated the tables, a Python script is written to detect the MST using Kruskal's algorithm.
 - - - -
-The MST of Turkish cities (previously shared on [Twitter](https://twitter.com/B_Anbar/status/1087787095748423687)):
+The MST of Turkish cities is found by using the Kruskal's algorithm which is implemented in Python (previously shared on [Twitter](https://twitter.com/B_Anbar/status/1087787095748423687)):
+
+*The aim of this project is to integrate all the process into a QGIS plugin such that whenever the user inputs a shp file, the MST is provided back.*
 
 ![MST of Turkish Cities](https://pbs.twimg.com/media/DxiXP_WX0AEZrHp.jpg)
 
