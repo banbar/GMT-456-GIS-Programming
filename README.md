@@ -8,8 +8,12 @@ The developed code is based on Python as it allows to further extend into a QGIS
    * Function Calls – pass by reference vs pass by value
    * Signal- Slot
 * Graph Data Structure
+   * Adjacency Matrix
    * Disjoint Sets
    * Minimum Spanning Tree
       * Kruskal's Algorithm
+      * Prim's Algorithm
+* Building a QGIS Plugin
+      
       
 
