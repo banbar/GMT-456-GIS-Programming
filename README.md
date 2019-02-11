@@ -14,6 +14,15 @@ The developed code is based on Python as it allows to further extend into a QGIS
       * Kruskal's Algorithm
       * Prim's Algorithm
 * Building a QGIS Plugin
-      
-      
 
+## Methodology
+1. Import the polygon shapefile into PostGIS.
+2. Create the *centroids* table. 
+     1. geometry_id
+     2. name
+     3. geometry
+3. Populate the centroids table: 
+    `		insert into public.centroids 
+           (select gid, name_2, st_centroid(geom) 
+           from ilceler)`
+     
