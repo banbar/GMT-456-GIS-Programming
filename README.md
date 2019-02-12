@@ -30,7 +30,7 @@ The developed code is based on Python as it allows to further extend into a QGIS
     5. geom (geometry) - geometry(LineString, *SRID*)
     6. origin_gid - integer
     7. destination_gid - integer
-5. Populate the edges table (at_intersects) 
+5. Populate the edges table (st_intersects) 
 
 - - - -
 The MST of Turkish cities is found by using the Kruskal's algorithm which is implemented in Python (previously shared on [Twitter](https://twitter.com/B_Anbar/status/1087787095748423687)):
