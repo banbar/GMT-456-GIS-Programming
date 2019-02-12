@@ -43,3 +43,10 @@ create extension postgis
 		)
 	-- LIMITATION: This generates the same edge twice! Do NOT consider the symmetric relation between the polygons
 	-- How it would be possible to half the size of the table???
+
+
+-- Obtain the edges present in MST (in QGIS)
+-- Display the edges
+select *
+from results r, edges e
+where r.origin = e.origin_gid and r.destination = e.destination_gid
