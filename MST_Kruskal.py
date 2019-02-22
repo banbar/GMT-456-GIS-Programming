@@ -47,7 +47,7 @@ def MST_Kruskal(inputFile):
     #      [neigh - the unique number of  city from the main list
     #      cost - the cost of building the blingors connection from NAME to neigh]
 
-    f = open(inputFile, 'r')
+    f = io.open(inputFile, 'r', encoding="utf-8")
 
     numCities = int(f.readline().rstrip('\n'))
 
@@ -71,6 +71,7 @@ def MST_Kruskal(inputFile):
         l_edges.append(n1)
         # See how many edges does it have?
         numEdges = int(f.readline().rstrip('\n'))
+        print(cityID, '-', numEdges)
 
         for i in range(numEdges):
             connection = f.readline().rstrip('\n').split(' ')
@@ -208,8 +209,15 @@ def generateGraph(P, t, outFileName):
     f.write(str(numCities) + "\n")
 
     for i in range(numCities):
+        # Some polygon names could have '\n' inherently
+        # Those '\n's must be removed
+
         print(cities[i].name)
-        f.write(cities[i].name + "\n")
+        #f.write(cities[i].name.rstrip('\n') + "\n")
+        # Writing the polygon names, somehow, lead to a ValueError:
+        # ValueError: invalid literal for int() with base 10: ''
+        # Therefore, instead of the polygon name, we write its geometry ID starting from 1
+        f.write(str(i+1) + "\n")
         f.write(str(cities[i].numNeighbours) + "\n")
         for j in range(1, cities[i].numNeighbours + 1):
             print(cities[i].neighbours[j][0])
@@ -227,7 +235,7 @@ def generateGraph(P, t, outFileName):
 
 
 # Connection settings
-dbName = "tr_mst"
+dbName = "tr_mst_ilce"
 userName = "postgres"
 pswd = "12345Aa"
 host = "127.0.0.1" #localhost
@@ -238,8 +246,8 @@ connPostgres= [dbName, userName, pswd, host, port]
 P = postgres(*connPostgres)
 
 nameEdgesTable = "edges"
-namePolygonsTable = "p_iller"
-nameAttrNamePolygon = "ad"
+namePolygonsTable = "p_ilceler"
+nameAttrNamePolygon = "name_2"
 
 #table = edgeTable(table_edges = 'edges', table_polygons = 'ilceler', attr_name_polygon = "name_2")
 table = edgeTable(table_edges = nameEdgesTable, table_polygons = namePolygonsTable, attr_name_polygon = nameAttrNamePolygon)
@@ -247,7 +255,7 @@ table = edgeTable(table_edges = nameEdgesTable, table_polygons = namePolygonsTab
 # Generate the graph -> the output is in the SPOJ format
 # Reference: https://www.spoj.com/problems/BLINNET/
 
-outFile = "tr_cities.txt"
+outFile = "tr_ilceler.txt"
 generateGraph(P, table, outFile)
 
 # Symmetric structure would need to be handled!
