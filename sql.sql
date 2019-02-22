@@ -19,8 +19,8 @@ create extension postgis
 
 	-- Insert the centroids to the new table
 	insert into public.centroids
-		(select gid, ad, st_setSRID(st_centroid(geom),3857) 
-		from p_iller)
+		(select gid, name_2, st_setSRID(st_centroid(geom),3857) 
+		from p_ilceler)
 
 -- EDGES - Lines between adjacent polygons
 
@@ -38,10 +38,10 @@ create extension postgis
 
 	-- Insert the edges to the new table 
 	insert into public.edges(origin, destination, weight, geom, origin_gid, destination_gid)
-		(select a.ad, b.ad,  
+		(select a.name_2, b.name_2,  
 			(st_length(st_makeline(st_centroid(a.geom), st_centroid(b.geom)))),
 			st_makeline(st_setSRID(st_centroid(a.geom),3857), st_setSRID(st_centroid(b.geom),3857)), a.gid, b.gid
-		from p_iller a, p_iller b
+		from p_ilceler a, p_ilceler b
 		where st_intersects(a.geom, b.geom) and a.gid != b.gid
 		)
 	-- LIMITATION: This generates the same edge twice! Do NOT consider the symmetric relation between the polygons
@@ -50,6 +50,6 @@ create extension postgis
 
 -- Obtain the edges present in MST (in QGIS)
 -- Display the edges
-select *
+select e.*
 from results r, edges e
 where r.origin = e.origin_gid and r.destination = e.destination_gid
