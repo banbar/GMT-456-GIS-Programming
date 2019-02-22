@@ -33,9 +33,14 @@ The developed code is based on Python as it allows to further extend into a QGIS
 5. Populate the edges table (st_intersects) 
 
 - - - -
-The MST of Turkish cities is found by using the Kruskal's algorithm which is implemented in Python (previously shared on [Twitter](https://twitter.com/B_Anbar/status/1087787095748423687)):
+The MST of Turkish cities and districts are found by using the Kruskal's algorithm which is implemented in Python (previously shared on [Twitter](https://twitter.com/B_Anbar/status/1087787095748423687)):
 
 *The aim of this project is to integrate all the process into a QGIS plugin such that whenever the user inputs a shp file, the MST is provided back.*
 
 ![MST of Turkish Cities](https://pbs.twimg.com/media/DxiXP_WX0AEZrHp.jpg)
+
+
+![MST of districts](https://pbs.twimg.com/media/Dz--HO9X0AEYTZn.jpg:large)
+
+
 
