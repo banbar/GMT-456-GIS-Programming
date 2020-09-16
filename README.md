@@ -19,5 +19,16 @@ The **successful students** would:
 * Google Earth Engine
 * Building a QGIS Plugin
 
+## Software:
+* QGIS 3.x 
+* [Anaconda Individual Edition](https://www.anaconda.com/products/individual)
+   * Spyder Integrated Development Environment (IDE) for Python scripting
+
+
 ## Resources:
 * [Google Earth Engine - Beginner's Cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
+* **Book**: [Geoprocessing with Python](https://www.manning.com/books/geoprocessing-with-python)
+* **Book**: [Applied Spatial Data Analysis with R](https://www.springer.com/gp/book/9781461476177)
+* **Book**: [Introduction to GIS Programming and Fundamentals with Python and ArcGIS](https://www.routledge.com/Introduction-to-GIS-Programming-and-Fundamentals-with-Python-and-ArcGIS/Yang/p/book/9780367573775)
+* **Book**: [The PyQGIS Programmer's Guide: Extending QGIS 3 with Python](https://locatepress.com/ppg3)
+
