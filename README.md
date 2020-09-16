@@ -32,5 +32,6 @@ The **successful students** would:
 * **Book**: [Applied Spatial Data Analysis with R](https://www.springer.com/gp/book/9781461476177)
 * **Book**: [Introduction to GIS Programming and Fundamentals with Python and ArcGIS](https://www.routledge.com/Introduction-to-GIS-Programming-and-Fundamentals-with-Python-and-ArcGIS/Yang/p/book/9780367573775)
 * **Book**: [The PyQGIS Programmer's Guide: Extending QGIS 3 with Python](https://locatepress.com/ppg3)
+* Further books will be avaiable soon.
 
 
