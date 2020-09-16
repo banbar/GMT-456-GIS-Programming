@@ -11,13 +11,13 @@ The **successful students** would:
 
 
 ## Contents:
-* Object oriented programming - A Recap
+* Object oriented programming - recap
    * Function Calls – pass by reference vs pass by value
    * Signal- Slot
-* Graph Data Structure
-   * Adjacency Matrix
-   * Disjoint Sets
-   * Minimum Spanning Tree (MST)
-      * Kruskal's Algorithm
-      * Prim's Algorithm
+* Data structures - recap 
+* Qt Designer
+* Google Earth Engine
 * Building a QGIS Plugin
+
+## Resources:
+* [Google Earth Engine - Beginner's Cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
