@@ -13,9 +13,9 @@ The **successful students** would:
 ## Contents:
 * Object oriented programming - recap
    * Function Calls – pass by reference vs pass by value
-   * Signal- Slot
-* Data structures - recap 
+* Data structures (arrays, linked lists, graphs) - recap 
 * Qt Designer
+   * Signal- Slot
 * Google Earth Engine
 * Building a QGIS Plugin
 
