@@ -29,6 +29,7 @@ The **successful students** would:
 * [Google Earth Engine - Beginner's Cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
 * [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
 * [spatialthoughts](https://github.com/spatialthoughts/courses)
+   * [PyQGIS in a Day](https://courses.spatialthoughts.com/pyqgis-in-a-day.html)
  
 * **Book**: [Geoprocessing with Python](https://www.manning.com/books/geoprocessing-with-python)
 * **Book**: [Applied Spatial Data Analysis with R](https://www.springer.com/gp/book/9781461476177)
