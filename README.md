@@ -30,6 +30,7 @@ The **successful students** would:
 * [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
 * [spatialthoughts](https://github.com/spatialthoughts/courses)
    * [PyQGIS in a Day](https://courses.spatialthoughts.com/pyqgis-in-a-day.html)
+* [A Comparison between Agile and Traditional Software Development Methodologies](https://www.unf.edu/~broggio/cen6940/ComparisonAgileTraditional.pdf)
  
 * **Book**: [Geoprocessing with Python](https://www.manning.com/books/geoprocessing-with-python)
 * **Book**: [Applied Spatial Data Analysis with R](https://www.springer.com/gp/book/9781461476177)
