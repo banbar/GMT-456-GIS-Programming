@@ -8,7 +8,7 @@ The **successful students** would:
 * ***Document*** the design and requirements of the software project that s/he worked on, 
 * ***Demonstrate*** the ability to work as a team for the purpose of developing a new or updating an existing QGIS plugin.
 
-`Pull requests or issues that are meant to increase the quality of the course content will be regarded as a **bonus**. `
+ ** Bonus **
 - - - -
 
 
