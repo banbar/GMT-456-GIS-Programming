@@ -26,17 +26,19 @@ The **successful students** would:
 
 
 ## Resources:
-* [Google Earth Engine - Beginner's Cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
-* [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+* Software Engineering
+   * [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+   * [A Comparison between Agile and Traditional Software Development Methodologies](https://www.unf.edu/~broggio/cen6940/ComparisonAgileTraditional.pdf)
+* Google Earth Engine
+   * [Google Earth Engine - Beginner's Cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
+* GitHub
+   * [GitHub Campus Advisor Training](https://www.youtube.com/playlist?list=PLIRjfNq867be7VngMuXsjTvzBM26nBINg)
+   * [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+ 
 * [spatialthoughts](https://github.com/spatialthoughts/courses)
    * [PyQGIS in a Day](https://courses.spatialthoughts.com/pyqgis-in-a-day.html)
-* [A Comparison between Agile and Traditional Software Development Methodologies](https://www.unf.edu/~broggio/cen6940/ComparisonAgileTraditional.pdf)
-* [GitHub Campus Advisor Training](https://www.youtube.com/playlist?list=PLIRjfNq867be7VngMuXsjTvzBM26nBINg)
  
 * **Book**: [Geoprocessing with Python](https://www.manning.com/books/geoprocessing-with-python)
 * **Book**: [Applied Spatial Data Analysis with R](https://www.springer.com/gp/book/9781461476177)
 * **Book**: [Introduction to GIS Programming and Fundamentals with Python and ArcGIS](https://www.routledge.com/Introduction-to-GIS-Programming-and-Fundamentals-with-Python-and-ArcGIS/Yang/p/book/9780367573775)
 * **Book**: [The PyQGIS Programmer's Guide: Extending QGIS 3 with Python](https://locatepress.com/ppg3)
-* Further books will be avaiable soon.
-
-
