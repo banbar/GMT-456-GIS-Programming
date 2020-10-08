@@ -8,7 +8,8 @@ The **successful students** would:
 * ***Document*** the design and requirements of the software project that s/he worked on, 
 * ***Demonstrate*** the ability to work as a team for the purpose of developing a new or updating an existing QGIS plugin.
 
- ** Bonus **
+=======
+>>>>>>> parent of 75cae41... Update README.md
 - - - -
 
 
