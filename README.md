@@ -37,6 +37,7 @@ The **successful students** would:
 * GitHub
    * [GitHub Campus Advisor Training](https://www.youtube.com/playlist?list=PLIRjfNq867be7VngMuXsjTvzBM26nBINg)
    * [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+   * [Using Markdown](https://commonmark.org/help/)
  
 * [spatialthoughts](https://github.com/spatialthoughts/courses)
    * [PyQGIS in a Day](https://courses.spatialthoughts.com/pyqgis-in-a-day.html)
