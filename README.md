@@ -8,11 +8,6 @@ The **successful students** would:
 * ***Document*** the design and requirements of the software project that s/he worked on, 
 * ***Demonstrate*** the ability to work as a team for the purpose of developing a new or updating an existing QGIS plugin.
 
-=======
->>>>>>> parent of 75cae41... Update README.md
-- - - -
-
-
 ## Contents:
 * Object oriented programming - recap
    * Function Calls – pass by reference vs pass by value
@@ -34,10 +29,16 @@ The **successful students** would:
    * [A Comparison between Agile and Traditional Software Development Methodologies](https://www.unf.edu/~broggio/cen6940/ComparisonAgileTraditional.pdf)
 * Google Earth Engine
    * [Google Earth Engine - Beginner's Cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
+* Git
+   * [Git Cheat Sheet - from GitHub](https://education.github.com/git-cheat-sheet-education.pdf)
+
 * GitHub
    * [GitHub Campus Advisor Training](https://www.youtube.com/playlist?list=PLIRjfNq867be7VngMuXsjTvzBM26nBINg)
    * [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
    * [Using Markdown](https://commonmark.org/help/)
+      * [GitHub Flavored Markdown](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
+   * [Workflow](https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf)
+   
  
 * [spatialthoughts](https://github.com/spatialthoughts/courses)
    * [PyQGIS in a Day](https://courses.spatialthoughts.com/pyqgis-in-a-day.html)
