@@ -17,6 +17,12 @@ The **successful students** would:
 * Google Earth Engine
 * Building a QGIS Plugin
 
+## Assignment 1:
+You will be submitting your README.md files on the comparison of different SDLC methodologies to this address: 
+https://classroom.github.com/a/Wnp3Y_Qw
+**Deadline**:  16 October 2020
+
+
 ## Software:
 * QGIS 3.x 
 * [Anaconda Individual Edition](https://www.anaconda.com/products/individual)
