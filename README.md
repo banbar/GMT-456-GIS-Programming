@@ -17,11 +17,9 @@ The **successful students** would:
 * Google Earth Engine
 * Building a QGIS Plugin
 
-## Assignment 1:
+## Assignment 1 (deadline: 16 Oct):
 You will be submitting your README.md files on the comparison of different SDLC methodologies to this address: 
 https://classroom.github.com/a/Wnp3Y_Qw
-**Deadline**:  16 October 2020
-
 
 ## Software:
 * QGIS 3.x 
@@ -37,6 +35,7 @@ https://classroom.github.com/a/Wnp3Y_Qw
    * [Google Earth Engine - Beginner's Cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
 * Git
    * [Git Cheat Sheet - from GitHub](https://education.github.com/git-cheat-sheet-education.pdf)
+   * [Saving Changes - add vs commit](https://www.atlassian.com/git/tutorials/saving-changes)
 
 * GitHub
    * [GitHub Campus Advisor Training](https://www.youtube.com/playlist?list=PLIRjfNq867be7VngMuXsjTvzBM26nBINg)
