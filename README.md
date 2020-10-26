@@ -43,7 +43,8 @@ https://classroom.github.com/a/Wnp3Y_Qw
    * [Using Markdown](https://commonmark.org/help/)
       * [GitHub Flavored Markdown](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
    * [Workflow](https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf)
-   
+* QGIS
+   * [Plugin Builder](https://g-sherman.github.io/Qgis-Plugin-Builder/)
  
 * [spatialthoughts](https://github.com/spatialthoughts/courses)
    * [PyQGIS in a Day](https://courses.spatialthoughts.com/pyqgis-in-a-day.html)
