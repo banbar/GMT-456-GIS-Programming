@@ -45,9 +45,12 @@ https://classroom.github.com/a/Wnp3Y_Qw
    * [Workflow](https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf)
 * QGIS
    * [Plugin Builder](https://g-sherman.github.io/Qgis-Plugin-Builder/)
+   
  
 * [spatialthoughts](https://github.com/spatialthoughts/courses)
    * [PyQGIS in a Day](https://courses.spatialthoughts.com/pyqgis-in-a-day.html)
+   * [Part 1: Building a Python Plugin (QGIS3)](https://www.qgistutorials.com/en/docs/3/building_a_python_plugin.html)
+   * [Part 2: Building a Processing Plugin (QGIS3)](https://www.qgistutorials.com/en/docs/3/processing_python_plugin.html)
  
 * **Book**: [Geoprocessing with Python](https://www.manning.com/books/geoprocessing-with-python)
 * **Book**: [Applied Spatial Data Analysis with R](https://www.springer.com/gp/book/9781461476177)
