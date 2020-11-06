@@ -36,6 +36,8 @@ https://classroom.github.com/a/Wnp3Y_Qw
 * Git
    * [Git Cheat Sheet - from GitHub](https://education.github.com/git-cheat-sheet-education.pdf)
    * [Saving Changes - add vs commit](https://www.atlassian.com/git/tutorials/saving-changes)
+* Git GUI
+   * [GitKraken](https://www.gitkraken.com/)
 
 * GitHub
    * [GitHub Campus Advisor Training](https://www.youtube.com/playlist?list=PLIRjfNq867be7VngMuXsjTvzBM26nBINg)
