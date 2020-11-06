@@ -40,6 +40,8 @@ https://classroom.github.com/a/Wnp3Y_Qw
    * [GitKraken](https://www.gitkraken.com/)
    * [Pretty git branch graphs](https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs)
       * [JSFiddle](http://jsfiddle.net/fracz/q76vj8ow/)
+      * [Git Grapher](http://bsara.github.io/git-grapher/)
+      * [Commits Graph](https://github.com/tclh123/commits-graph)
     
 
 * GitHub
