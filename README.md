@@ -39,7 +39,7 @@ https://classroom.github.com/a/Wnp3Y_Qw
 * Git GUI
    * [GitKraken](https://www.gitkraken.com/)
    * [Pretty git branch graphs](https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs)
-    * [JSFiddle](http://jsfiddle.net/fracz/q76vj8ow/)
+      * [JSFiddle](http://jsfiddle.net/fracz/q76vj8ow/)
     
 
 * GitHub
