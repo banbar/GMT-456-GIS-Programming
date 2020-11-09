@@ -24,13 +24,17 @@
 from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
 from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction, QFileDialog
-from qgis.core import QgsProject, Qgis, QgsVectorLayer 
+from qgis.core import QgsProject, Qgis, QgsVectorLayer, QgsField
 from osgeo import ogr, osr, gdal
 import os
+from PyQt5.QtCore import QVariant
+from qgis.utils import iface
+
+
 
 
 # Initialize Qt resources from file resources.py
-from .resources import *
+#from .resources import *
 # Import the code for the dialog
 from .save_attributes_dialog import SaveAttributesDialog
 import os.path
@@ -210,7 +214,8 @@ class SaveAttributes:
             self.dlg.comboBox_id.addItems(self.fieldNames)
         except:
             self.dlg.label_wrong_input.setText('Wrong Input')
-            
+    
+    # createShp is supposed to create a new shapefile.
     def createShp(self, input_line, costs, out_shp, sr):
         driver = ogr.GetDriverByName('Esri Shapefile')
         ds = driver.CreateDataSource(out_shp)
@@ -254,30 +259,96 @@ class SaveAttributes:
             # Do something useful here - delete the line containing pass and
             # substitute with your code.
             
-            fn = self.dlg.lineEdit_input_shp.text()
+            file_path = self.dlg.lineEdit_input_shp.text()
             # Open the shp file
             # Second argument tell whether to read (0, default), or to update (1)
-            ds = ogr.Open(fn,0)
+            ds = ogr.Open(file_path,0)
             
             if ds is None:
-                sys.exit('Could not open {0}.'.format(fn))
+                sys.exit('Could not open {0}.'.format(file_path))
             
+            # Obtain the layer
             lyr = ds.GetLayer()
             
+            # Runs, but does not create a new field-------------
+            # lyr.CreateField(ogr.FieldDefn('x', ogr.OFTReal))
+            # lyr.CreateField(ogr.FieldDefn('y', ogr.OFTReal))
+            # # Runs, but does not create a new field-------------
+            
             if (lyr.GetGeomType() == ogr.wkbPoint): #wkb: wll known binary
-                print("POINT")
+                type_of_layer = "point"
             elif(lyr.GetGeomType() == ogr.wkbLineString):
-                print("LINE")
+                type_of_layer = "line"
             elif(lyr.GetGeomType() == ogr.wkbPolygon):
-                 print("POLYGON")
+                type_of_layer = "polygon"
+                
+                   
+            vlayer = QgsVectorLayer(self.dlg.lineEdit_input_shp.text(), 
+                                    type_of_layer, 
+                                    "ogr")
             
+
+                    
             
-            # vlayer = QgsVectorLayer(self.dlg.lineEdit_input_shp.text(), 
-            #                         "point", 
-            #                         "ogr")
+            # Obtain the chosen ID field - it is supposed to be ID.
+            # Note: If the "No ID" checkbox is checked, we should not include ID's in the newly created shp file. 
+            idFieldName = self.dlg.comboBox_id.currentText()
+             
+            
+            # Number of features/records
+            num_features = lyr.GetFeatureCount()
+            print("Number of features: ", num_features)
             
             if not vlayer.isValid():
                 print("Layer failed to load!")
             else:
                 QgsProject.instance().addMapLayer(vlayer)
+                # QgsMapLayerRegistry.instance().addMapLayer(vlayer) #test this statement
             
+            # Add two new attributes to the vlayer: the POIs X and Y
+            # Field definition           
+            vlayer = iface.activeLayer()   
+            # Start editing this virtual layer
+
+            vlayer.startEditing()
+            layer_provider = vlayer.dataProvider()
+            layer_provider.addAttributes([QgsField('x', QVariant.Double),
+                                          QgsField('y', QVariant.Double)])
+            vlayer.updateFields() 
+            vlayer.commitChanges()
+            
+            # Iterate over all POIs and add their coordinates to the newly defined fields
+            layer = iface.activeLayer()
+
+            if(type_of_layer == "point"):
+                
+                layer.startEditing()
+                all_features = layer.getFeatures()
+                
+                for feat in all_features:
+                    geom = feat.geometry()
+                    x = geom.asPoint().x()
+                    y = geom.asPoint().y()
+                    #print(x,y) #OK
+                    #x = pt.GetX() does not exist in PyQGIS
+                    #y = pt.GetY()
+                    
+                    # X
+                    new_x = {feat.fieldNameIndex('x'): x}
+                    layer.dataProvider().changeAttributeValues({feat.id(): new_x })
+                    # Question: What is the difference between changeAttributeValue() changeAttributeValues()?
+                    # REF: https://qgis.org/api/classQgsVectorLayer.html#aaf39ac56bb98c118b881e512e07c5d76
+                    # changeAttributeValue() does not work in QGIS 3.12.
+                    
+                    
+                    # Y
+                    new_y = {feat.fieldNameIndex('y'): y}
+                    layer.dataProvider().changeAttributeValues({feat.id(): new_y })
+
+                    # Does not work:
+                    #feat["x"] = x
+                    #feat["y"] = y
+                    
+                    #layer.updateFeature(feat.id())
+            # Commit changes
+            layer.commitChanges()
