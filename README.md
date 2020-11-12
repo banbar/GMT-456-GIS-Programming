@@ -36,6 +36,7 @@ https://classroom.github.com/a/Wnp3Y_Qw
 * Git
    * [Git Cheat Sheet - from GitHub](https://education.github.com/git-cheat-sheet-education.pdf)
    * [Saving Changes - add vs commit](https://www.atlassian.com/git/tutorials/saving-changes)
+   * [Learning Git 101 by Yasoob Khalid](https://yasoob.github.io/learn-git/)
 * Git GUI
    * [GitKraken](https://www.gitkraken.com/)
    * [Pretty git branch graphs](https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs)
