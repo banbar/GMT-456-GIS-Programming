@@ -16,7 +16,7 @@ The objective of the midterm project is to update the plugin such that the follo
 * The plugin will then ***create a new line shp file***, which provides the details of the **two special lines** (i.e. the min/max distance between the two closest/distant points, where the distance is calculated as the shortest distance between two points).  
    * Template of the resulting line shp file looks like:
       
-| optional                              |                                                |
+| ***optional***            | ***optional***                  |                                                |
 |---------------------|-------------------|------------------------------------------------|
 | poi\_id\_start      | po\_id\_end       | length                                         |
 |     shortest\_start |     shortest\_end |     distance between two closest pairs         |
