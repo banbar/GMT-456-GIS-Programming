@@ -31,17 +31,41 @@ The objective of the midterm project is to update the plugin such that the follo
    * The second attribute is ***shortest_length***, which first identifies the start and end points of a polyline, and records the shortest distance between these two points.
 * If a ***polygon*** shapefile is provided, provide a gentle warning to the user stating that the plugin cannot operate on polygons.
 
+## Tasks
 You need to consider the following adjustments to increase the quality of your plugin: 
-
-1. Add a control statement that checks whether a new field that you define is already present or not. If the new field(s) are present, there is no need to add once more. This will be useful when debugging the code multiple times, and prevent situations like this in which we add the same attributes (i.e. x and y) multiple times:
+### 1
+Add a control statement that checks whether a new field that you define is already present or not. If the new field(s) are present, there is no need to add once more. This will be useful when debugging the code multiple times, and prevent situations like this in which we add the same attributes (i.e. x and y) multiple times:
 
 ![](img/contol_add_new_attributes.png)
 
-2. At the moment, the plugin adds the X and Y fields regardless of the input geometry. Make sure that the new fields are added only when **point** geometries are input. 
-3. Investigate ways in which to increase the quality of the GUI layout. At the moment, the ***horizontal layout*** is not correctly structured, so that the “browse” button takes more space than it should. Can you also identify other aspects which increases the quality of the GUI?
+### 2
+
+At the moment, the plugin adds the X and Y fields regardless of the input geometry. Make sure that the new fields are added only when **point** geometries are input. 
+
+### 3
+
+Investigate ways in which to increase the quality of the GUI layout. At the moment, the ***horizontal layout*** is not correctly structured, so that the “browse” button takes more space than it should. Can you also identify other aspects which increases the quality of the GUI?
 
 ![](img/issue_push_button_horizontal_layout.png)
 
-4. Each student in a group should add one new feature. For this, **each student must create a new branch**, add the new feature to this branch and then **merge it back**. Understand how different **merge** options will take place. Follow these [1](https://youtu.be/QV0kVNvkMxc), [2](https://youtu.be/XX-Kct0PfFc) references for a better understanding of branch-merge process.
+
+### Branch & Merge - Adding New Features 
+
+* Each student in a group **should add one new feature**. 
+
+* Briefly describe this new feature in an **issue** so that your teammate knows what you will be working on.
+
+* **Create a new branch**, and add the new feature to this branch.
+
+* **Merge the feature branch into the master branch**. 
+
+* Understand how different **merge** options will take place. Specifically, describe the difference between ***merge made by the 'recursive' strategy*** and ***fast-forward***.
+
+* Report any merge-conflicts and discuss how you dealt with the merge conflict.
+
+  
+Follow these [1](https://youtu.be/QV0kVNvkMxc), [2](https://youtu.be/XX-Kct0PfFc) references for a better understanding of branch-merge process. Also, this [Atlassian - Git Merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge) reference could be useful.
+
+
 
 
