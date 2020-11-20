@@ -5,6 +5,7 @@
 Fork the course’s [**GitHub page**](https://github.com/banbar/GMT-456-GIS-Programming). You may start investigating the QGIS plugin under the `save_attributes/` folder.
 
 The GUI of the plugin is as follows:
+
 ![](/img/gui_save_attributes.png)
 
 At the moment, this plugin adds two attributes (X and Y) to a point shp file and populates them by inserting the relevant values corresponding to each feature. 
@@ -15,7 +16,7 @@ The objective of the midterm project is to update the plugin such that the follo
 * The plugin will then ***create a new line shp file***, which provides the details of the **two special lines** (i.e. the min/max distance between the two closest/distant points, where the distance is calculated as the shortest distance between two points).  
    * Template of the resulting line shp file looks like:
       
-| optional            |                   |                                                |
+| optional                              |                                                |
 |---------------------|-------------------|------------------------------------------------|
 | poi\_id\_start      | po\_id\_end       | length                                         |
 |     shortest\_start |     shortest\_end |     distance between two closest pairs         |
