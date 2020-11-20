@@ -46,7 +46,7 @@ At the moment, the plugin adds the X and Y fields regardless of the input geomet
 
 Investigate ways in which to increase the quality of the GUI layout. At the moment, the ***horizontal layout*** is not correctly structured, so that the “browse” button takes more space than it should. Can you also identify other aspects which increases the quality of the GUI?
 
-![](img/issue_push_button_horizontal_layout.png =500x500)
+![](img/issue_push_button_horizontal_layout.png){:height="10%" width="10%"}
 
 
 ### Branch & Merge - Adding New Features 
