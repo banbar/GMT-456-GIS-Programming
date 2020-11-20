@@ -4,6 +4,8 @@
 
 Fork the course’s [**GitHub page**](https://github.com/banbar/GMT-456-GIS-Programming). You may start investigating the QGIS plugin under the `save_attributes/` folder.
 
+**Always work on your GitHub Classroom repo while doing your midterm project**.
+
 The GUI of the plugin is as follows:
 
 ![](/img/gui_save_attributes.png)
