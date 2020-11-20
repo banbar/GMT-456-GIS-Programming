@@ -18,6 +18,6 @@ The objective of the midterm project is to update the plugin such that the follo
       
 | ***optional***            | ***optional***                  |                                                |
 |---------------------|-------------------|------------------------------------------------|
-| poi\_id\_start      | po\_id\_end       | length                                         |
+| **poi\_id\_start**      | **po\_id\_end**       | **length ** |
 |     shortest\_start |     shortest\_end |     distance between two closest pairs         |
 |     longest\_start  |     longest\_end  |     distance between two most distant pairs    |
