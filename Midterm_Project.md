@@ -5,7 +5,7 @@
 Fork the course’s [**GitHub page**](https://github.com/banbar/GMT-456-GIS-Programming). You may start investigating the QGIS plugin under the `save_attributes/` folder.
 
 The GUI of the plugin is as follows:
-![](file://E:/Google Drive/GMT_456_GIS Programming/GitHub_Page/img/gui_save_attributes.png)
+![](/img/gui_save_attributes.png)
 
 At the moment, this plugin adds two attributes (X and Y) to a point shp file and populates them by inserting the relevant values corresponding to each feature. 
 
