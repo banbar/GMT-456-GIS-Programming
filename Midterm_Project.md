@@ -44,7 +44,7 @@ Add a control statement that checks whether a new field that you define is alrea
 
 ### 2 - X and Y fields are only added to Point shp files
 
-At the moment, the plugin adds the X and Y fields regardless of the input geometry. Make sure that the new fields are added only when **point** geometries are input. 
+At the moment, the plugin adds the X and Y fields regardless of the input geometry. Make sure that the new fields are added only when **polyline** geometries are input. 
 
 ### 3 - GUI Layout
 
