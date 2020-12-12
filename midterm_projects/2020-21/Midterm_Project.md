@@ -8,7 +8,7 @@ Fork the course’s [**GitHub page**](https://github.com/banbar/GMT-456-GIS-Prog
 
 The GUI of the plugin is as follows:
 
-![](/midterm-projects/2020-21/img/gui_save_attributes.png)
+![](/midterm_projects/2020-21/img/gui_save_attributes.png)
 
 At the moment, this plugin adds two attributes (X and Y) to a point shp file and populates them by inserting the relevant values corresponding to each feature.
 
