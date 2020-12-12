@@ -13,18 +13,15 @@ You could select the shapefile from the interface (Input layer part). And there 
 ***Case 1***  
 If the input layer geometry is line; the plugin will compute the shortest and real distance among features, azimuth and reverse azimuth between lines' start points and end points. And also draw the shortest line with its length. See below,  
 
-<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/line_1feat.JPG" width ="500" />
-<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/lines_attr.JPG" width ="350" />         
+<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/line_1feat.JPG" width ="500" /><br/><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/lines_attr.JPG" width ="350" />         
 
 If there is more than one feature on layer. It will also show the features which could possibly be a polygon.    
-<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/line_mult.JPG" width ="450" />
-<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/azimuth.png" width ="450" />  
+<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/line_mult.JPG" width ="450" /><br/><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/azimuth.png" width ="450" />  
 
 ***Case 2*** 
 If the input layer is point. It will check whether feature number is greater than 2. If it is the case, it  will calculate the minimum and maxiumum distannce among all points and draw the lines related to them. See below,      
 
-<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/minmax.JPG" width ="500" />
-<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/point_attr.JPG" width ="430" />
+<img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/minmax.JPG" width ="500" /><br/><img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/point_attr.JPG" width ="430" />
 
 ***Case 3*** 
 If the input layer is polygon, the plugin computes the area and perimeter of the poligons and show in the table with inserting.
