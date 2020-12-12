@@ -1,5 +1,5 @@
 # Midterm Project Guidelines
-# Due: 3 December
+# Due: 3 December 2020
 
 
 Fork the course’s [**GitHub page**](https://github.com/banbar/GMT-456-GIS-Programming). You may start investigating the QGIS plugin under the `save_attributes/` folder.
