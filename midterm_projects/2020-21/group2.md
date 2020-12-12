@@ -1,5 +1,5 @@
 # Group 2
-Authors:   
+***Authors***   
 Ahmet Fırat Karaoğlu : karaoglu@email.com  
 Metehan Ergen : metehan.ergenn@gmail.com  
 
@@ -8,7 +8,7 @@ Hello everyone ! we have contributed new features to a QGIS plugin called "save_
 ***Interface***   
 <img src = "https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/GUI.png" width ="500" />  
 
-You could select the shapefile from the interface (Input layer part). And there will be 2 main cases,
+You could select the shapefile from the interface (Input layer part). And there will be 3 main cases,
 
 ***Case 1*** <br/>If the input layer geometry is line; the plugin will compute the shortest and real distance among features, azimuth and reverse azimuth between lines' start points and end points. And also draw the shortest line with its length. See below,  
 
@@ -25,7 +25,7 @@ If there is more than one feature on layer. It will also show the features which
 ![Image](https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/midterm_projects/2020-21/img/group2-images/area-peri.png)
 
 
-
+<br/><br/><br/>Note: We used this to be able to add our university logo to the GUI: https://gis.stackexchange.com/questions/381661/image-adding-problem-to-qgis-plugin-gui-with-qt-designer (You may need to run the "compile.bat" file in the folder according to you for the logo.)
 
 
 
