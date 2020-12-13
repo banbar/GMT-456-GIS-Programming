@@ -58,3 +58,10 @@ except:
 
 * Combo box not allow to select c_beytepe layer below here because its a line type layer. 
 <img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_5.jpg" width="60%">
+
+#### Drawing New Layer in all type of CRS:
+* The Algorithms in the plugin create new layers and drawing some point or lines. In the beginning it only draw on QGIS's default crs. We identify crs as source crs instead of qgis default crs. That means we additionaly add 'crs=self.vlayer.sourceCrs()'. The code example is below here.
+
+```python
+lineLayer = QgsVectorLayer("MultiLineString", "lines", "memory", crs=self.vlayer.sourceCrs())
+```
