@@ -85,3 +85,22 @@ lineLayer = QgsVectorLayer("MultiLineString", "lines", "memory", crs=self.vlayer
 
 ---
 
+#### Finding and drawing center point between this farthest two points.
+* The code calculate it with getting x and y coordinates of the start and end points. Then getting avarage of the x and y. It give us new center point coordinates. Then we add it to created point layer.
+
+```python
+baslangicx=lineStart.x()
+baslangicy=lineStart.y()
+bitisx=lineEnd.x()
+bitisy=lineEnd.y()
+
+ortX=(baslangicx+bitisx)/2
+ortY=(baslangicy+bitisy)/2
+
+segMid=QgsFeature()
+segMid.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(ortX,ortY)))
+```
+
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_8.jpg" width="70%">
+
+---
