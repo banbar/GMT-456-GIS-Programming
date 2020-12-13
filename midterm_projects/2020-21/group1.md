@@ -39,3 +39,22 @@ if(self.layerDef.GetGeomType() == ogr.wkbPolygon):#
 ```
 
 <img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_4.jpg" width="40%">
+
+#### Run Button and Combo Box Relation:
+
+* When we click to Run button plugin will implement some algorithm on the layer which is selected on combo box. We want to implement it on only point layers so combo box must shuw only the point layers.
+
+* The code part and example result below here. Also  in the 'geometryType()== 0' 0(zero) means point type layer. 
+
+```python
+try:
+  if layer.geometryType() == 0:              
+    layersList.append(layer.name())
+    layersList_shp.append(layer)
+                            
+except:
+  continue
+```
+
+* Combo box not allow to select c_beytepe layer below here because its a line type layer. 
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_5.jpg" width="60%">
