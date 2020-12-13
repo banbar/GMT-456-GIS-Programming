@@ -106,3 +106,30 @@ segMid.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(ortX,ortY)))
 ---
 
 #### Finding and drawing break points of the Multi Line String:
+
+* When we click to OK button the algorithm starts and draw the break points on the Multi Line Strings. It work in a for loop until the multi line string complate.
+
+```python
+vertex=[]
+for i in range(len(geom.constGet()[0])):
+  pt = geom.constGet()[0][i]
+  vertex.append(pt)
+  i+=1
+                            
+print(vertex)
+
+                        
+v1= QgsVectorLayer("Point", "point", "memory",crs = self.vlayer.sourceCrs())
+                        
+for i in range(len(vertex)):
+  pr = v1.dataProvider()
+  f = QgsFeature()
+  f.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(vertex[i])))
+  pr.addFeatures( [f] )
+  v1.updateExtents()
+                            
+QgsProject.instance().addMapLayers([v1])
+v1.commitChanges()                        
+```
+
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_10.jpg" width="70%">
