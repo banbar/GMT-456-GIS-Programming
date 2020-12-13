@@ -22,3 +22,20 @@ Mail address: brkkvlcm@gmail.com
 **5 - Layout:** Layout limit to frame of the gui so we can't make gui page smaller then selected layout frame.
 
 <p align="center"><img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_3.jpg" width="100%"></p>
+
+---
+### Functions and details About Plugin
+#### Inputing Only Line and Point files:
+
+* Code's input_shp_file function upload a shape file into the QGIS but we don't want to upload any polygon type file so we limited it and when we try to upload a polygon file it will give us some error message.
+
+* The code part and the error example is below here.
+
+```python
+if(self.layerDef.GetGeomType() == ogr.wkbPolygon):#
+  self.error_msj("Sadece çizgi veya nokta katmanı girebilirsiniz !")
+  self.dlg.lineEdit.setText("")
+  return False
+```
+
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_4.jpg" width="40%">
