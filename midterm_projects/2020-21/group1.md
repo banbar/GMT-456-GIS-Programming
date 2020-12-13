@@ -24,7 +24,7 @@ Mail address: brkkvlcm@gmail.com
 <p align="center"><img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_3.jpg" width="100%"></p>
 
 ---
-### Functions and details About Plugin
+### Functions and Details About Plugin
 #### Inputing Only Line and Point files:
 
 * Code's input_shp_file function upload a shape file into the QGIS but we don't want to upload any polygon type file so we limited it and when we try to upload a polygon file it will give us some error message.
@@ -104,3 +104,5 @@ segMid.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(ortX,ortY)))
 <img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_8.jpg" width="70%">
 
 ---
+
+#### Finding and drawing break points of the Multi Line String:
