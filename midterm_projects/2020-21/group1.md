@@ -19,7 +19,7 @@ Mail address: brkkvlcm@gmail.com
 
 **4 - Combo Box:** Combo boxes work for selecting correct options. This correct options like 'only point layer' listed in combo boxes and we can select the which layer we want to use.
 
-**5 - Layout:** Layout limit to frame of the gui so we can't make gui page smaller then selected layout frame.
+**5 - Layout:** Layout limits frame size of the gui so we can't make gui page smaller then selected layout frame. GUI example below here is the smallest interface according to layout.
 
 <p align="center"><img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_3.jpg" width="100%"></p>
 
