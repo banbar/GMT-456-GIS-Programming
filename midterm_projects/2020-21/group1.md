@@ -132,4 +132,4 @@ QgsProject.instance().addMapLayers([v1])
 v1.commitChanges()                        
 ```
 
-<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_10.jpg" width="70%">
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_11jpg.jpg" width="70%">
