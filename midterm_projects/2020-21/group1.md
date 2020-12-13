@@ -1,6 +1,6 @@
 #  QGIS Plugin Development Group 1 Document
 ---
-## Members involved in the development phase
+### Members involved in the development phase
 
 * Berkay İbiş  
 Mail address: 
@@ -9,8 +9,8 @@ Mail address:
 Mail address: brkkvlcm@gmail.com
 
 ---
-## Graphical User Interface of the Plugin
-### Parts of the GUI (Graphical User Interface)
+### Graphical User Interface of the Plugin
+#### Parts of the GUI (Graphical User Interface)
 **1 - Line Label:** Line Labels just some string that give us information about other parts of the gui which is means line label does not run any function.
 
 **2 - Line Edit:** Line Edits show us the directory and name of the files which is selected by Push and Tool Buttons.
