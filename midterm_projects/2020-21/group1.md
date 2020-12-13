@@ -40,6 +40,8 @@ if(self.layerDef.GetGeomType() == ogr.wkbPolygon):#
 
 <img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_4.jpg" width="40%">
 
+---
+
 #### Run Button and Combo Box Relation:
 
 * When we click to Run button plugin will implement some algorithm on the layer which is selected on combo box. We want to implement it on only point layers so combo box must shuw only the point layers.
@@ -59,9 +61,27 @@ except:
 * Combo box not allow to select c_beytepe layer below here because its a line type layer. 
 <img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_5.jpg" width="60%">
 
+---
+
 #### Drawing New Layer in all type of CRS:
 * The Algorithms in the plugin create new layers and drawing some point or lines. In the beginning it only draw on QGIS's default crs. We identify crs as source crs instead of qgis default crs. That means we additionaly add 'crs=self.vlayer.sourceCrs()'. The code example is below here.
 
 ```python
 lineLayer = QgsVectorLayer("MultiLineString", "lines", "memory", crs=self.vlayer.sourceCrs())
 ```
+
+---
+
+#### Algorithms:
+
+#### Drawing lines between closest and farthest two points.
+* When we select a point layer in combo box and click to run the plugin create a new line layer which is shows distance between closest and farthest two points.
+
+* Visual example and Attribute tables of the new line layer below here. This Attribute table include start and end point's id and distance between them. 
+
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_7.jpg" width="55%">
+
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_6.jpg" width="70%">
+
+---
+
