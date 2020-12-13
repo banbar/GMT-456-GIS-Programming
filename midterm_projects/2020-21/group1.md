@@ -107,7 +107,7 @@ segMid.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(ortX,ortY)))
 
 #### Finding and drawing break points of the Multi Line String:
 
-* After upload an multi line string data then we click to OK button. The algorithm starts and draw the break points (vertices) on the Multi Line Strings type data layer. It work in a for loop until the multi line string complate.
+* After upload an multi line string data then we click to OK button. The algorithm starts and draw the break points (node points) on the Multi Line Strings type data layer. It work in a for loop until the multi line string complate.
 
 ```python
 vertex=[]
