@@ -3,7 +3,7 @@
 ### Members involved in the development phase
 
 * Berkay İbiş  
-Mail address: 
+Mail address: berkayyibis@hotmail.com
 
 * Berk Kıvılcım  
 Mail address: brkkvlcm@gmail.com
