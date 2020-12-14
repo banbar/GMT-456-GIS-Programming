@@ -3,7 +3,7 @@
 ### Members involved in the development phase
 
 * Berkay İbiş  
-Mail address: 
+Mail address: berkayyibis@hotmail.com
 
 * Berk Kıvılcım  
 Mail address: brkkvlcm@gmail.com
@@ -19,12 +19,12 @@ Mail address: brkkvlcm@gmail.com
 
 **4 - Combo Box:** Combo boxes work for selecting correct options. This correct options like 'only point layer' listed in combo boxes and we can select the which layer we want to use.
 
-**5 - Layout:** Layout limit to frame of the gui so we can't make gui page smaller then selected layout frame.
+**5 - Layout:** Layout limits frame size of the gui so we can't make gui page smaller then selected layout frame. GUI example below here is the smallest interface according to layout.
 
 <p align="center"><img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group_1_3.jpg" width="100%"></p>
 
 ---
-### Functions and details About Plugin
+### Functions and Details About Plugin
 #### Inputing Only Line and Point files:
 
 * Code's input_shp_file function upload a shape file into the QGIS but we don't want to upload any polygon type file so we limited it and when we try to upload a polygon file it will give us some error message.
@@ -85,3 +85,53 @@ lineLayer = QgsVectorLayer("MultiLineString", "lines", "memory", crs=self.vlayer
 
 ---
 
+#### Finding and drawing center point between this farthest two points.
+* The code calculate it with getting x and y coordinates of the start and end points. Then getting avarage of the x and y. It give us new center point coordinates. Then we add it to created point layer.
+
+```python
+baslangicx=lineStart.x()
+baslangicy=lineStart.y()
+bitisx=lineEnd.x()
+bitisy=lineEnd.y()
+
+ortX=(baslangicx+bitisx)/2
+ortY=(baslangicy+bitisy)/2
+
+segMid=QgsFeature()
+segMid.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(ortX,ortY)))
+```
+
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_8.jpg" width="70%">
+
+---
+
+#### Finding and drawing break points of the Multi Line String:
+
+* After upload an multi line string data then we click to OK button. The algorithm starts and draw the break points (node points) on the Multi Line Strings type data layer. It work in a for loop until the multi line string complate.
+
+```python
+vertex=[]
+for i in range(len(geom.constGet()[0])):
+  pt = geom.constGet()[0][i]
+  vertex.append(pt)
+  i+=1
+                            
+print(vertex)
+
+                        
+v1= QgsVectorLayer("Point", "point", "memory",crs = self.vlayer.sourceCrs())
+                        
+for i in range(len(vertex)):
+  pr = v1.dataProvider()
+  f = QgsFeature()
+  f.setGeometry(QgsGeometry.fromPointXY(QgsPointXY(vertex[i])))
+  pr.addFeatures( [f] )
+  v1.updateExtents()
+                            
+QgsProject.instance().addMapLayers([v1])
+v1.commitChanges()                        
+```
+
+<img src="https://github.com/axecasper/GMT-456-GIS-Programming/blob/patch-1/midterm_projects/2020-21/img/group1-images/group1_11jpg.jpg" width="100%">
+
+---
