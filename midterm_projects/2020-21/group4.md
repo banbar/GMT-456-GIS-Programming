@@ -24,7 +24,6 @@
 <p>&nbsp;</p>
 <h3>Point</h3>
 <p>If we select a point shapefile it calcultes <strong>minimum</strong> and <strong>maximum</strong> distances</p>
-<p>in that line</p>
 <p><img src="https://i.hizliresim.com/ggFiKA.png" alt="" width="505" height="311" /></p>
  Find the points that have <strong>minimum distance</strong> and the <strong>maximum distance</strong>
 <p><img src="https://i.hizliresim.com/WhLLu6.png" alt="" /></p>
