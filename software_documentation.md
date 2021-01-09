@@ -32,6 +32,7 @@ The Pythonic way of documenting software is to use [Sphinx](https://www.sphinx-d
      * `mkdir docs`
      * `sphinx-apidoc -o docs sources`
      * `make html`
+     * `make clean`
 6. [optional] - Autobuilding (simultaneous update of the documentation as you update the software):
    * Install the **sphinx-autobuild** package: `pip install sphinx-autobuild`.
    * At CLI, type:
@@ -43,7 +44,20 @@ The Pythonic way of documenting software is to use [Sphinx](https://www.sphinx-d
 * You can also install, for example the [Read the Docs (rtd)](https://github.com/readthedocs/sphinx_rtd_theme), theme, by `pip install sphinx-rtd-theme`.
 * To enable a theme, under the **conf.py**, update the `html_theme` accordingly (e.g. `html_theme = 'sphinx_rtd_theme'`).
 
+## Some Examples of Visualization
+![Image](https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/img/visualization%20(0).png)
+
+![Image](https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/img/visualization%20(1).png)
+
+![Image](https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/img/visualization%20(2).png)
+
+![Image](https://github.com/afkHub/GMT-456-GIS-Programming/blob/master/img/visualization%20(3).png)
+
+If you also want to share your documentation on the web like this https://gmt456-documentation.readthedocs.io/, you can use this website https://readthedocs.org/ <br/>Sign up with your github account, make an "Import a Project" with the link of your documentation project you shared on github.
+
 ## References
 
 * https://www.youtube.com/watch?v=LQ6pFgQXQ0Q&ab_channel=EngineeringAnywhere
 * https://www.youtube.com/watch?v=d_XeV6oyNvI&ab_channel=%7BLP%7DWITHRAHMAT
+* https://pythonhosted.org/an_example_pypi_project/sphinx.html
+* https://www.youtube.com/watch?v=DSIuLnoKLd8
