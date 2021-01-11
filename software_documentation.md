@@ -19,9 +19,9 @@ The Pythonic way of documenting software is to use [Sphinx](https://www.sphinx-d
 4. Provide the details regarding your project. The default values are labelled as within square brackets.
 5. Update the `conf.py`.
   * Uncomment:
-      * `import os`
-		  * `import sys`
-		  * `sys.path.insert(0, os.path.abspath('.'))`
+    * `import os`
+    * `import sys`
+    * `sys.path.insert(0, os.path.abspath('.'))`
   * Add the folder that contains the **.py** files (i.e. ***sources***) to the sys.path:
      * `sys.path.append('sources') under sys.path`
   * Update the **extensions** list to:
