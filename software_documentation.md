@@ -39,11 +39,11 @@ The Pythonic way of documenting software is to use [Sphinx](https://www.sphinx-d
         * Ignore these warnings, and run `make html` until no more warnings show up.
      * `make clean` would remove all the built html files.
 6. [optional] - Autobuilding (simultaneous update of the documentation as you update the software):
-   * Install the **sphinx-autobuild** package: `pip install sphinx-autobuild`.
+   * Install the **sphinx-autobuild** package: `pip install sphinx-autobuild`. If you are using Anaconda: `conda install -c conda-forge sphinx-autobuild`
    * At CLI, type:
-      * `sphinx-autobuild . _build/html`
-      * ???: https://pypi.org/project/sphinx-autobuild/ (to see changes in google) or just type http://127.0.0.1:8000
-   * To shut down the server (???: when did we start it?): **Ctrl + C**.
+      * `sphinx-autobuild . _build/html`: Starts the server that reflects all changes made in the rst files on the fly.
+      * Local address: http://127.0.0.1:8000
+      * To shut down the server: **Ctrl + C**. Then, you have create another CLI.
 
 * Sphinx provides beautiful themes. These themes could be [browsed](https://sphinx-themes.org/).
 * You can also install, for example the [Read the Docs (rtd)](https://github.com/readthedocs/sphinx_rtd_theme), theme, by `pip install sphinx-rtd-theme`.
@@ -66,3 +66,4 @@ If you also want to share your documentation on the web like this https://gmt456
 * https://www.youtube.com/watch?v=d_XeV6oyNvI&ab_channel=%7BLP%7DWITHRAHMAT
 * https://pythonhosted.org/an_example_pypi_project/sphinx.html
 * https://www.youtube.com/watch?v=DSIuLnoKLd8
+* [Autobuild](https://pypi.org/project/sphinx-autobuild/)
