@@ -23,14 +23,14 @@ The Pythonic way of documenting software is to use [Sphinx](https://www.sphinx-d
     * `import sys`
     * `sys.path.insert(0, os.path.abspath('.'))`
   * Add the folder that contains the **.py** files (i.e. ***sources***) to the sys.path:
-     * `sys.path.append('sources') under sys.path`
+     * `sys.path.append('sources')`
   * Update the **extensions** list to:
      * `extensions = ['sphinx.ext.autodoc']`
   * Under **index.rst**:
      * Add `docs/save_attributes`
   * At CLI type:
-     * `mkdir docs`
-     * `sphinx-apidoc -o docs sources`
+     * `mkdir docs`: Create the **docs** directory
+     * `sphinx-apidoc -o docs sources`: Creates the **rst** of the script under the **sources** directory, and saves it under the **docs** directory.  
      * `make html`
      * `make clean`
 6. [optional] - Autobuilding (simultaneous update of the documentation as you update the software):
