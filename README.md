@@ -44,7 +44,8 @@ https://classroom.github.com/a/Wnp3Y_Qw
       * [Git Grapher](http://bsara.github.io/git-grapher/)
       * [Commits Graph](https://github.com/tclh123/commits-graph)
       * [Gitinspector - statistical analysis on a repo](https://github.com/ejwa/gitinspector)
-    
+* Sphinx
+   * [Brandon’s Sphinx Tutorial](https://buildmedia.readthedocs.org/media/pdf/brandons-sphinx-tutorial/latest/brandons-sphinx-tutorial.pdf)    
 
 * GitHub
    * [GitHub Campus Advisor Training](https://www.youtube.com/playlist?list=PLIRjfNq867be7VngMuXsjTvzBM26nBINg)
