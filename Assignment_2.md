@@ -1,6 +1,6 @@
 # Assignment #2 (Due: 20 October 2021 14:00)
 
-This assignment is a pair work. Find your teammate on GitHub Classroom and do the following together:
+Form a group of **two-three** students. Find your teammate(s) on GitHub Classroom and do the following together:
 
 * Open a SHP file
 * Print the attribute names - in TWO different ways
