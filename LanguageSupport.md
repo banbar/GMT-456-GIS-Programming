@@ -8,6 +8,9 @@ After that create new .pro file in our plugin`s i18n folder.
 Our .pro file need to be like that. Sources shows our main .py file , forms shows our user interface file , translations shows which language our plugin language support. 
 Languages part needs to be with .ts format because qt linguist is working with .ts file format. 
 After that we open qt shell and define our i18n file path.
+
+** Be sure to name the ts file like your_plugin_ + language + .ts otherwise the language loading will fail! Use 2 letters shortcut for the language (it for Italian, de for German, etc...)**
+
 <img src = "https://github.com/Afacaann/GIS-Programming/blob/main/2.PNG" />
 Write command like "lupdate saveattributes.pro".  You need to write your .pro file name that you choose.
 <img src = "https://github.com/Afacaann/GIS-Programming/blob/main/3.PNG" width ="500" />
