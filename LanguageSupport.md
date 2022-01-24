@@ -114,6 +114,6 @@ After running this command, the .ts file will appear in the i18n folder.
 </p>
 
 ## REFERENCES
-[QGIS Documentation](https://docs.qgis.org/3.16/tr/docs/pyqgis_developer_cookbook/plugins/plugins.html#translation)
+[QGIS Documentation for Language Support in Plugins](https://docs.qgis.org/3.16/tr/docs/pyqgis_developer_cookbook/plugins/plugins.html#translation)
 You can download qt from https://www.qt.io/download .
-You can download qt linguist from https://github.com/lelegard/qtlinguist-installers/releases .
+You can download qt linguist from https://github.com/thurask/Qt-Linguist/releases/tag/20211214.
