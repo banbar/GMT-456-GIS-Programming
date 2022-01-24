@@ -29,9 +29,9 @@ You can download qt from https://www.qt.io/download .
 You can download qt linguist from https://github.com/lelegard/qtlinguist-installers/releases .
 
 
-## LANGUAGE SUPPORT
+# LANGUAGE SUPPORT
   
-In order to add Language Support feature in the plugin named FinalProject, the following steps are done:
+In order to add Language Support feature in the plugin (The name of the plugin we created is **FinalProject** ), the following steps are done:
   
   - A .pro file to be managed by [QT Linguist](https://github.com/thurask/Qt-Linguist/releases/tag/20211214) is in the i18n folder in the plugin directory where Translation related files will be found.
 should be created. The contents of the FinalProject.pro file should be as follows:
@@ -112,3 +112,8 @@ After running this command, the .ts file will appear in the i18n folder.
  <p align="center">
   <img src="https://github.com/GMT-456-GIS-Programming/qgis-plugin-2/blob/main/qgis_plugin_ss/interface.jpg"/>
 </p>
+
+## REFERENCES
+[QGIS Documentation](https://docs.qgis.org/3.16/tr/docs/pyqgis_developer_cookbook/plugins/plugins.html#translation)
+You can download qt from https://www.qt.io/download .
+You can download qt linguist from https://github.com/lelegard/qtlinguist-installers/releases .
