@@ -23,10 +23,6 @@ This .qm file is the only file that QGIS need for language support.
 
 So you have the language support for language that you choose.
 
-<h1> References </h1>
-
-You can download qt from https://www.qt.io/download .
-You can download qt linguist from https://github.com/lelegard/qtlinguist-installers/releases .
 
 
 # LANGUAGE SUPPORT
