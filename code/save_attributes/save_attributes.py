@@ -29,7 +29,7 @@ from osgeo import ogr, osr, gdal
 import os
 from PyQt5.QtCore import QVariant
 from qgis.utils import iface
-
+import sys
 
 
 
